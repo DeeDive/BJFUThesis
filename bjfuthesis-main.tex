@@ -1,0 +1,46 @@
+% !TeX encoding = UTF-8
+% !TeX program = xelatex
+% !TeX spellcheck = en_US
+
+
+\documentclass{bjfuthesis}
+
+
+% 论文基本配置，加载宏包等全局配置
+\input{bjfusetup}
+
+\begin{document}
+
+\frontmatter
+
+
+\input{contents/abstract}
+% 目录
+\tableofcontents
+
+%删去空白页
+\cleardoublepage
+
+% 正文部分
+\mainmatter
+\input{contents/chap00}
+\input{contents/chap01}
+\input{contents/chap02}
+
+% 其他部分
+\backmatter
+
+% 参考文献
+\nocite{*}
+\bibliography{refs/refs}  % 参考文献使用 BibTeX 编译
+%\printbibliography       % 参考文献使用 BibLaTeX 编译
+
+% 附录
+\appendix
+
+\input{contents/appendix}
+
+% 致谢
+\input{contents/acknowledgements}
+
+\end{document}

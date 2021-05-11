@@ -1,0 +1,117 @@
+% !TeX root = ../bjfuthesis-main.tex
+
+\chapter{图表示例}
+
+\section{插图}
+  
+图片通常在 figure 环境中使用\cite{dupont1974bone}\cite{jianduju1994}  $\backslash$ includegraphics 插入，如图~\ref{fig:example} 的源代码。
+建议矢量图片使用 PDF 格式，比如数据可视化的绘图；
+照片应使用 JPG 格式；
+其他的栅格图应使用无损的 PNG 格式。
+注意，LaTeX 不支持 TIFF 格式；EPS 格式已经过时。
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.5\linewidth]{example-image-a.pdf}
+  \caption*{此处添加图注，有图注或者其他说明时需要置于图题之上}
+  \bicaption{示例图片标题} {English title}
+
+  \label{fig:example}
+\end{figure}
+
+若图或表中有附注，采用英文小写字母顺序编号，附注写在图或表的下方。
+国外的期刊习惯将图表的标题和说明文字写成一段，需要改写为标题只含图表的名称，其他说明文字以注释方式写在图表下方，或者写在正文中。
+
+如果一个图由两个或两个以上分图组成时，各分图分别以 (a)、(b)、(c)...... 作为图序，并须有分图题。
+推荐使用 subcaption 宏包来处理， 比如图~\ref{fig:subfig-a} 和图~\ref{fig:subfig-b}。
+
+
+
+\begin{figure}[h]
+  \centering
+  \subcaptionbox{分图 A\label{fig:subfig-a}}
+    {\includegraphics[width=0.35\linewidth]{example-image-a.pdf}}
+  \subcaptionbox{分图 B\label{fig:subfig-b}}
+    {\includegraphics[width=0.35\linewidth]{example-image-b.pdf}}
+  \bicaption{多个分图的示例} {English title}
+
+  \label{fig:multi-image}
+\end{figure}
+
+
+
+\section{表格}
+
+表应具有自明性。为使表格简洁易读，尽可能采用三线表，如表~\ref{tab:three-line}。
+三条线可以使用 booktabs 宏包提供的命令生成。
+
+\begin{table}[h]
+\xiaowu
+
+  \centering
+  \bicaption{三线表示例} {English title}
+  \begin{tabular}{ll}
+    \toprule
+    文件名          & 描述                         \\
+    \midrule
+    bjfuthesis.cls   & 模板文件                    \\
+    bjfuthesis-*.bst & BibTeX 参考文献表样式文件    \\
+    \bottomrule
+  \end{tabular}
+  \label{tab:three-line}
+\end{table}
+
+表格如果有附注，尤其是需要在表格中进行标注时，可以使用 threeparttable宏包。
+
+\begin{table}[h]
+\xiaowu
+  \centering
+  \begin{threeparttable}[c]
+    \bicaption{带附注的表格示例} {English title}
+    \label{tab:three-part-table}
+    \begin{tabular}{ll}
+      \toprule
+      文件名                 & 描述                         \\
+      \midrule
+      bjfuthesis.cls\tnote{1} & 模板文件                     \\
+      bjfuthesis-*.bst        & BibTeX 参考文献表样式文件    \\
+      \bottomrule
+    \end{tabular}
+    \begin{tablenotes}
+
+      \item [1] 注1:更新模板时，一定要记得编译生成 .cls 文件，否则编译论文时载入的依然是旧版的模板。
+    \end{tablenotes}
+  \end{threeparttable}
+\end{table}
+
+如某个表需要转页接排，可以使用 longtable 宏包，需要在随后的各页上重复表的编号。
+编号后跟表题（可省略）和“（续）”，置于表上方。续表均应重复表头。
+
+
+\section{算法}
+
+算法环境可以使用 algorithms 或者 algorithm2e 宏包。
+\renewcommand{\algorithmicrequire}{\textbf{输入：}\unskip}
+\renewcommand{\algorithmicensure}{\textbf{输出：}\unskip}
+
+\begin{algorithm}[ht]
+  \caption{Calculate $y = x^n$} 
+  \label{alg1}
+  \small
+  \begin{algorithmic}
+    \REQUIRE $n \geq 0$
+    \ENSURE $y = x^n$
+
+    \STATE $y \leftarrow 1$, $X \leftarrow x$, $N \leftarrow n$
+
+    \WHILE{$N \neq 0$}
+      \IF{$N$ is even}
+        \STATE $X \leftarrow X \times X$
+        \STATE $N \leftarrow N / 2$
+      \ELSE[$N$ is odd]
+        \STATE $y \leftarrow y \times X$
+        \STATE $N \leftarrow N - 1$
+      \ENDIF
+    \ENDWHILE
+  \end{algorithmic}
+\end{algorithm}

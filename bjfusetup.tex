@@ -1,0 +1,82 @@
+% !TeX root = ./thuthesis-example.tex
+
+% 论文基本信息配置
+
+
+% 载入所需的宏包
+
+% 定理类环境宏包
+\usepackage{amsthm}
+% 也可以使用 ntheorem
+% \usepackage[amsmath,thmmarks,hyperref]{ntheorem}
+
+
+
+% 可以使用 nomencl 生成符号和缩略语说明
+% \usepackage{nomencl}
+% \makenomenclature
+
+% 表格加脚注
+\usepackage{threeparttable}
+
+% 表格中支持跨行
+\usepackage{multirow}
+
+% 固定宽度的表格。
+% \usepackage{tabularx}
+
+% 跨页表格
+\usepackage{longtable}
+
+% 算法
+\usepackage{algorithm}
+\usepackage{algorithmic}
+
+% 量和单位
+\usepackage{siunitx}
+
+% 参考文献使用 BibTeX + natbib 宏包
+% 顺序编码制
+
+\usepackage[sort]{natbib}
+\renewcommand{\bibfont}{\wuhao \songti} % For natbib 
+
+
+% 国家标准(GB/T7714-2015) https://github.com/CTeX-org/gbt7714-bibtex-style
+\usepackage[sort]{gbt7714}
+\bibliographystyle{gbt7714-numerical}
+
+
+% 著者-出版年制
+% \usepackage{natbib}
+% \bibliographystyle{thuthesis-author-year}
+
+% 本科生参考文献的著录格式
+% \usepackage[sort]{natbib}
+% \bibliographystyle{thuthesis-bachelor}
+
+% 参考文献使用 BibLaTeX 宏包
+% \usepackage[backend=biber,style=thuthesis-numeric]{biblatex}
+% \usepackage[backend=biber,style=thuthesis-author-year]{biblatex}
+% \usepackage[backend=biber,style=apa]{biblatex}
+% \usepackage[backend=biber,style=mla-new]{biblatex}
+% 声明 BibLaTeX 的数据库
+% \addbibresource{ref/refs.bib}
+
+% 定义所有的图片文件在 figures 子目录下
+\graphicspath{{figures/}}
+
+% 数学命令
+\makeatletter
+\newcommand\dif{%  % 微分符号
+  \mathop{}\!%
+  \ifthu@math@style@TeX
+    d%
+  \else
+    \mathrm{d}%
+  \fi
+}
+\makeatother
+
+% hyperref 宏包在最后调用
+\usepackage{hyperref}
