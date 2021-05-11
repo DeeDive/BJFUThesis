@@ -165,8 +165,10 @@
 %表格控制
 \RequirePackage{array}
 %三线表:\cs{toprule}，\cs{midrule}，\cs{bottomrule}。
+\RequirePackage{tabularx}
 \RequirePackage{booktabs}
 \RequirePackage{url}
+
 
 
 %论文中出现的所有数字和字母如无特殊要求都用Times New Roman体。
@@ -489,3 +491,11 @@
 \captionsetup[figure][bi-second]{name=Figure} %设置图的英文编号前缀
 \captionsetup[table][bi-second]{name=Table} %设置表的英文编号前缀
 
+
+
+% 列表编号设置
+\renewcommand{\labelenumi}{（\theenumi）} % 一级为(1)
+\renewcommand{\theenumii}{\arabic{enumii}} % 二级设置为数字
+\renewcommand{\labelenumii}{
+    \large\protect\textcircled{\small{\theenumii}}
+} % 二级为圈1
