@@ -1,6 +1,6 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{bjfuthesis}
-[2021/05/09 1.0.1 Beijing Forestry University Thesis Template]
+[2021/05/09 v1.0.1 Beijing Forestry University Thesis Template]
 
 %\renewcommand{\normalsize}{\fontsize{10pt}{12pt}\selectfont}
 %\setlength{\textwidth}{6.5in}
@@ -10,7 +10,7 @@
 
 \hyphenation{BJFU-Thesis}
 \def\bjfuthesis{BJFUThesis}
-\def\version{1.0.0}
+\def\version{1.0.1}
 
 \newcommand\bjfu@error[1]{%
 	\ClassError{bjfuthesis}{#1}{}%
