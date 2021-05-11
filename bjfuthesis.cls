@@ -174,8 +174,8 @@
 %论文中出现的所有数字和字母如无特殊要求都用Times New Roman体。
 %设置正文非汉字的字体为Times New Roman
 \setmainfont{Times New Roman}
-\setCJKmainfont[AutoFakeBold]{STSong}
-\setCJKfallbackfamilyfont{\CJKrmdefault}[AutoFakeBold]{SimSun}
+% \setCJKmainfont[AutoFakeBold]{STSong}
+% \setCJKfallbackfamilyfont{\CJKrmdefault}[AutoFakeBold]{SimSun}
 
 
 % 行距 1.25
@@ -221,7 +221,7 @@
 	footskip = 1.0cm,
 }
 %字体
-\setCJKfamilyfont{zhsong}[AutoFakeBold = {2.17}]{SimSun}
+% \setCJKfamilyfont{zhsong}[AutoFakeBold = {2.17}]{SimSun}
 
 \providecommand\songti{\CJKfamily{zhsong}}
 \providecommand\heiti{\CJKfamily{zhhei}}
