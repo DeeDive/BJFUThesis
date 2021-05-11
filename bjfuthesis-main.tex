@@ -35,16 +35,18 @@
 \backmatter
 
 % 参考文献
-\nocite{*}
+\phantomsection\addcontentsline{toc}{chapter}{参考文献}
+\nocite{*} % 若需要隐藏未引用的文献，请删除本行
 \bibliography{refs/refs}  % 参考文献使用 BibTeX 编译
 %\printbibliography       % 参考文献使用 BibLaTeX 编译
 
-% 附录
-\appendix
-
-\input{contents/appendix}
 
 % 致谢
+\phantomsection\addcontentsline{toc}{chapter}{致谢}
 \input{contents/acknowledgements}
+
+% 附录
+\appendix
+\input{contents/appendix}
 
 \end{document}
