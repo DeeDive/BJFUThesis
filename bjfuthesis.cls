@@ -389,22 +389,21 @@
 %  }%
 %  \@starttoc{toc}%
 %}
-\RequirePackage{tocloft}
+%\RequirePackage{tocloft}
+% 该Package会导致页面溢出问题，请谨慎使用
 
 %\renewcommand{\cftchapfont}{\scshape}
 %\renewcommand{\cftsecfont}{\bfseries}
 
 % 目录居中
-\renewcommand{\contentsname}{\hfill\sanhao \songti  \bfseries \bjfu@name@contents}
-\renewcommand{\cftaftertoctitle}{\hfill}
+%\renewcommand{\contentsname}{\hfill\sanhao \songti  \bfseries \bjfu@name@contents}
+%\renewcommand{\cftaftertoctitle}{\hfill}
 
 \newcommand\bjfu@leaders{\titlerule*[4bp]{.}}
 \newcommand\bjfu@set@toc@format{%
 	\contentsmargin{\z@}%
 	\titlecontents{chapter}
-	[\z@]{
-		\wuhao \songti \bfseries
-	}
+	[\z@]{\wuhao \songti \bfseries }
 	{\contentspush{\thecontentslabel\quad}}{}
 	{\rmfamily\bjfu@leaders\thecontentspage}%
 	\titlecontents{section}
@@ -412,7 +411,7 @@
 	{\contentspush{\thecontentslabel\quad}}{}
 	{\bjfu@leaders\thecontentspage}%
 	\titlecontents{subsection}
-	[1em]{\wuhao \songti}
+	[2em]{\wuhao \songti}
 	{\contentspush{\thecontentslabel\quad}}{}
 	{\bjfu@leaders\thecontentspage}%
 }

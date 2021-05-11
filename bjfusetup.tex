@@ -1,4 +1,4 @@
-% !TeX root = ./thuthesis-example.tex
+% !TeX root = ./bjfuthesis-main.tex
 
 % 论文基本信息配置
 
@@ -43,7 +43,7 @@
 \usepackage[sort]{natbib}
 \renewcommand{\bibfont}{\wuhao \songti} % For natbib 
 
-
+% 本科生参考文献的著录格式
 % 国家标准(GB/T7714-2015) https://github.com/CTeX-org/gbt7714-bibtex-style
 \usepackage[sort]{gbt7714}
 \bibliographystyle{gbt7714-numerical}
@@ -51,15 +51,12 @@
 
 % 著者-出版年制
 % \usepackage{natbib}
-% \bibliographystyle{thuthesis-author-year}
+% \bibliographystyle{gbt7714-author-year}
 
-% 本科生参考文献的著录格式
-% \usepackage[sort]{natbib}
-% \bibliographystyle{thuthesis-bachelor}
 
 % 参考文献使用 BibLaTeX 宏包
-% \usepackage[backend=biber,style=thuthesis-numeric]{biblatex}
-% \usepackage[backend=biber,style=thuthesis-author-year]{biblatex}
+% \usepackage[backend=biber,style=bjfuthesis-numeric]{biblatex}
+% \usepackage[backend=biber,style=bjfuthesis-author-year]{biblatex}
 % \usepackage[backend=biber,style=apa]{biblatex}
 % \usepackage[backend=biber,style=mla-new]{biblatex}
 % 声明 BibLaTeX 的数据库
@@ -71,12 +68,12 @@
 % 数学命令
 \makeatletter
 \newcommand\dif{%  % 微分符号
-  \mathop{}\!%
-  \ifthu@math@style@TeX
-    d%
-  \else
-    \mathrm{d}%
-  \fi
+	\mathop{}\!%
+	\ifthu@math@style@TeX
+		d%
+	\else
+		\mathrm{d}%
+	\fi
 }
 \makeatother
 
