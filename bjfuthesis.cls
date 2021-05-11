@@ -242,7 +242,7 @@
 	}
 	\fancyfoot[C]{\wuhao\thepage}%
 	\headheight  0.5cm
-	\headsep  1.3cm
+	\headsep  1.1cm
 }
 \pagestyle{plain}
 
