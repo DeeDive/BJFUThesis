@@ -174,7 +174,8 @@
 %论文中出现的所有数字和字母如无特殊要求都用Times New Roman体。
 %设置正文非汉字的字体为Times New Roman
 \setmainfont{Times New Roman}
-\setCJKmainfont{宋体}
+\setCJKmainfont[AutoFakeBold]{STSong}
+\setCJKfallbackfamilyfont{\CJKrmdefault}[AutoFakeBold]{SimSun}
 
 
 % 行距 1.25
@@ -454,6 +455,7 @@
 	\begin{center}
 		\sanhao \songti \bfseries
 		\bjfu@name@acknowledgements%
+		\vspace{-.5em}
 	\end{center}
 	\par
 	\wuhao
