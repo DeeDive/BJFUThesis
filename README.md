@@ -4,7 +4,7 @@
 
 此仓库旨在提供一个简单易用的北京林业大学学位论文 LaTeX 文档类（非官方）模板，用户可以参考或者直接基于此示例文档撰写报告。
 
-LaTeX Lab Report Template for Beijing Forestry University
+LaTeX Thesis Template for Beijing Forestry University
 
 ## 反馈与贡献
 
