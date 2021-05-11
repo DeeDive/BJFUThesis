@@ -1,4 +1,6 @@
 # BJFUThesis
+[![](https://img.shields.io/badge/BJFUThesis-v1.0.1-brightgreen.svg)]({https://github.com/DeeDive/BJFUThesis})
+
 
 ## 欢迎使用BJFU-Thesis论文模板
 
@@ -19,4 +21,8 @@ LaTeX Thesis Template for Beijing Forestry University
 + 通过各种聊天渠道联系我们，成为项目的长期维护者:)
 
 ## 致谢
-感谢所有为模板贡献过代码的同学们，以及所有测试和使用模板的各位同学。
+* 感谢 马起园 及 王政 学长早期的[BjfuLatexTemplate](https://github.com/ufo5260987423/BjfuLatexTemplate)工作， 对于本项目的开发给予了极大的激励。
+* 感谢 [@thuthesis](https://github.com/tuna/thuthesis) 以及 [@SJTUThesis](https://github.com/sjtug/SJTUThesis) 对于本模版开发的极大启发与帮助。
+* 感谢 庞博 [@Bloomberg2000](https://github.com/Bloomberg2000) 和 方子东 [@quaeast](https://github.com/quaeast/BjfuLatexTemplate) 同学对本模板开发的极大贡献与支持。
+* 感谢所有为模板贡献过代码的[同学们](https://github.com/sjtug/SJTUThesis/graphs/contributors)，以及所有在测试和使用模板的你。
+
