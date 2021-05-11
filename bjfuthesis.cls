@@ -238,7 +238,7 @@
 	\fancyhead[C]{%
 		\xiaowu
 		\songti
-		北京林业大学本科毕业论文
+		北京林业大学本科毕业论文（设计）
 	}
 	\fancyfoot[C]{\wuhao\thepage}%
 	\headheight  0.5cm
@@ -500,3 +500,6 @@
 \renewcommand{\labelenumii}{
     \large\protect\textcircled{\small{\theenumii}}
 } % 二级为圈1
+
+%%
+%% End of file `bjfuthesis.cls'.
