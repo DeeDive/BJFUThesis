@@ -10,7 +10,8 @@
 % 也可以使用 ntheorem
 % \usepackage[amsmath,thmmarks,hyperref]{ntheorem}
 
-
+% 封面添加
+\usepackage{pdfpages}
 
 % 可以使用 nomencl 生成符号和缩略语说明
 % \usepackage{nomencl}
@@ -18,6 +19,7 @@
 
 % 表格加脚注
 \usepackage{threeparttable}
+\renewcommand*\TPTnoteLabel[1]{\xiaowu\songti\textbf{注#1:}}
 
 % 表格中支持跨行
 \usepackage{multirow}

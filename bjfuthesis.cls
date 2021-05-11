@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{bjfuthesisinc}
+\ProvidesClass{bjfuthesis}
 [2021/05/09 1.0.1 Beijing Forestry University Thesis Template]
 
 %\renewcommand{\normalsize}{\fontsize{10pt}{12pt}\selectfont}
@@ -488,6 +488,4 @@
 \captionsetup[figure]{labelsep=space,font = {footnotesize,bf},labelfont=bf,textfont=bf}
 \captionsetup[figure][bi-second]{name=Figure} %设置图的英文编号前缀
 \captionsetup[table][bi-second]{name=Table} %设置表的英文编号前缀
-
-%参考文献格式
 
