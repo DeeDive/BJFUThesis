@@ -23,7 +23,7 @@ git clone https://github.com/DeeDive/BJFUThesis.git
 
 [Overleaf](https://www.overleaf.com) 用户可以从下面的模版链接创建自己的项目。
 
-[![Overleaf](https://img.shields.io/badge/overleaf-BJFUThesis-brightgreen.svg)]({https://www.overleaf.com/latex/templates/bjfuthesis-beijing-forestry-university-thesis-latex-template/hqfjrfjxswgn})
+[![Overleaf](https://img.shields.io/badge/overleaf-BJFUThesis-brightgreen.svg)](https://www.overleaf.com/latex/templates/bjfuthesis-beijing-forestry-university-thesis-latex-template/hqfjrfjxswgn)
 
 ## 反馈与贡献
 
