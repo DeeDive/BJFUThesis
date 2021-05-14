@@ -2,11 +2,28 @@
 [![](https://img.shields.io/badge/BJFUThesis-v1.0.1-brightgreen.svg)]({https://github.com/DeeDive/BJFUThesis})
 
 
+
 ## 欢迎使用BJFU-Thesis论文模板
 
 此仓库旨在提供一个简单易用的北京林业大学学位论文 LaTeX 文档类（非官方）模板，用户可以参考或者直接基于此示例文档撰写报告。
 
 LaTeX Thesis Template for Beijing Forestry University
+
+## 获取模板
+
+### 下载模版
+
+普通用户可以直接 `clone` 或者在 [Github](https://github.com/DeeDive/BJFUThesis) 页面下载仓库代码。
+
+```bash
+git clone https://github.com/DeeDive/BJFUThesis.git
+```
+
+### Overleaf
+
+[Overleaf](https://www.overleaf.com) 用户可以从下面的模版链接创建自己的项目。
+
+[![Overleaf](https://img.shields.io/badge/overleaf-BJFUThesis-brightgreen.svg)]({https://www.overleaf.com/latex/templates/bjfuthesis-beijing-forestry-university-thesis-latex-template/hqfjrfjxswgn})
 
 ## 反馈与贡献
 
