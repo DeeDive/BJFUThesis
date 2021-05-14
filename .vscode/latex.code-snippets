@@ -80,12 +80,12 @@
 		"body": [
 			"\\begin{figure}[htbp] %H为当前位置，!htb为忽略美学标准，htbp为浮动图形",
 			"\t\\centering %图片居中",
-			"\t\\bicaption{$1}{$2} % 第一个参数为中文名，第二个参数为英文名",
 			"\t\\label{Fig:$3} %用于文内引用的标签",
 			"\t\\subcaptionbox{$4 \\label{Fig:$5}} % 子图A {子图名 \\lable{子图标签}}",
 			"\t{\\includegraphics[width=$4\\linewidth]{$6}} % 子图A路径",
 		  	"\t\\subcaptionbox{$7 \\label{Fig:$8}} % 子图B {子图名 \\lable{子图标签}}",
 			"{\\includegraphics[width=$9\\linewidth]{$10}} % 子图B路径",
+			"\t\\bicaption{$1}{$2} % 第一个参数为中文名，第二个参数为英文名",
 			"\\end{figure}"
 		]
 	},
@@ -96,9 +96,9 @@
 		"body": [
 			"\\begin{figure}[htbp] %H为当前位置，!htb为忽略美学标准，htbp为浮动图形",
 			"\t\\centering %图片居中",
-			"\t\\bicaption{$1}{$2} % 第一个参数为中文名，第二个参数为英文名",
 			"\t\\label{Fig:$3} %用于文内引用的标签",
 			"\t\\includegraphics[width=$4\\textwidth]{$5} %插入图片，[]中设置图片大小，{}中是图片相对于根目录的文件名",
+			"\t\\bicaption{$1}{$2} % 第一个参数为中文名，第二个参数为英文名",
 			"\\end{figure}"
 		]
 	},
