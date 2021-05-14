@@ -1,5 +1,5 @@
 # BJFUThesis
-[![](https://img.shields.io/badge/BJFUThesis-v1.0.1-brightgreen.svg)]({https://github.com/DeeDive/BJFUThesis})
+[![](https://img.shields.io/badge/BJFUThesis-v1.0.1-brightgreen.svg)](https://github.com/DeeDive/BJFUThesis)
 
 
 
