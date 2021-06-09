@@ -7,9 +7,11 @@
 
 % 定理类环境宏包
 \usepackage{amsthm}
-\usepackage{amssymb}
 % 也可以使用 ntheorem
 % \usepackage[amsmath,thmmarks,hyperref]{ntheorem}
+% 公式美化
+\usepackage{amsmath}
+\usepackage{amssymb}
 
 % 封面添加
 \usepackage{pdfpages}
@@ -30,6 +32,7 @@
 
 % 跨页表格
 \usepackage{longtable}
+\usepackage{tabu}
 
 % 算法
 \usepackage{algorithm}
@@ -65,19 +68,29 @@
 % \addbibresource{ref/refs.bib}
 
 % 定义所有的图片文件在 figures 子目录下
-%\graphicspath{{figures/}}
+% \graphicspath{{figures/}}
 
 % 数学命令
 \makeatletter
 \newcommand\dif{%  % 微分符号
-	\mathop{}\!%
-	\ifthu@math@style@TeX
-		d%
-	\else
-		\mathrm{d}%
-	\fi
+  \mathop{}\!%
+  \ifthu@math@style@TeX
+    d%
+  \else
+    \mathrm{d}%
+  \fi
 }
 \makeatother
 
-% hyperref 宏包在最后调用
-\usepackage[hidelinks]{hyperref}
+
+% 解决列表行距过大问题
+\usepackage{enumitem}
+\setenumerate[1]{itemsep=0pt,partopsep=0pt,parsep=\parskip,topsep=0pt}
+\setitemize[1]{itemsep=0pt,partopsep=0pt,parsep=\parskip,topsep=0pt}
+\setenumerate[2]{itemsep=0pt,partopsep=0pt,parsep=\parskip,topsep=0pt}
+\setitemize[2]{itemsep=0pt,partopsep=0pt,parsep=\parskip,topsep=0pt}
+\setenumerate[3]{itemsep=0pt,partopsep=0pt,parsep=\parskip,topsep=0pt}
+\setitemize[3]{itemsep=0pt,partopsep=0pt,parsep=\parskip,topsep=0pt}
+
+% 去除PDF中的链接提示，增加PDF三级目录书签
+\usepackage[hidelinks,bookmarksopen,bookmarksdepth=3]{hyperref}

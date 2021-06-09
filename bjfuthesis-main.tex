@@ -9,11 +9,20 @@
 % 论文基本配置，加载宏包等全局配置
 \input{bjfusetup}
 
+
 \begin{document}
 
 % 导入封面
-% 请填写docs下的封面word模板之后转换为pdf放置到covers目录下
-\includepdf[pages=1]{covers/coverpage.pdf}
+% 请填写docs下的封面word模板之后转换为pdf放置到static目录下，命名为coverpage.pdf
+\includepdf[pages=1]{static/coverpage.pdf}
+
+% 导入独创性声明
+\includepdf[pages=1]{static/statement.pdf}
+
+% 导入任务书声明
+% 请下载任务书后封面转换为pdf放置到static目录下，命名为task.pdf
+% \includepdf[pages=1]{static/task.pdf}
+
 
 \frontmatter
 \input{contents/abstract}
