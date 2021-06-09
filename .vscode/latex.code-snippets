@@ -20,26 +20,26 @@
 		"prefix": "table-basic-bjfu",
 		"description": "生成一个bjfu基本表格",
 		"body": [
-			"\\begin{table}[h] % table 里面也可以嵌套tabular,只有tabular是不能加标题的",
-			"\t\\xiaowu %设置为小五号字体",
-			"\t\\centering %表格居中",
+			"\\begin{table}[h] % h-当前位置，单独使用不生效 t-顶部 b-底部 p浮动",
+			"\t\\xiaowu % 设置为小五号字体",
+			"\t\\centering % 表格居中",
 			"\t\\begin{threeparttable}",
 			"\t\t\\bicaption{$1}{$2} % 第一个参数为中文名，第二个为英文名",
 			"\t\t\\label{Table:$3} % 用于文内引用的标签",
-			"\t\t\\begin{tabular}{$4} % 左右中分别用字母l,r,c表示",
-			"\t\t\t\\toprule",
+			"\t\t\\begin{tabular}{$4} % 左右中分别用字母l,r,c表示，假设表格有三列，且需要全表居中则输入ccc",
+			"\t\t\t\\toprule % 下方输入表头",
 			"\t\t\t$5",
-			"\t\t\t\\midrule",
+			"\t\t\t\\midrule % 下方输入表内容",
 			"\t\t\t$6",
 			"\t\t\t\\bottomrule",
 			"\t\t\\end{tabular}",
-			"\t\t%% 注释开始",
+			"\t\t% 注释开始",
 			"\t\t\\begin{tablenotes}",
 			"\t\t\t\\tiny",
 			"\t\t\t\\item $7 ",
 			"\t\t\t\\item[1] $8 % 根据编号使用\\tnote{编号}引用",
 			"\t\t\\end{tablenotes} ",
-			"\t\t%% 注释结束 ",
+			"\t\t% 注释结束 ",
 			"\t\\end{threeparttable}",
 			"\\end{table}"
 		]
@@ -49,28 +49,52 @@
 		"prefix": "table-auto-long-text-bjfu",
 		"description": "生成一个bjfu可自动布局长文本表格",
 		"body": [
-			"\\begin{table}[h] % table 里面也可以嵌套tabular,只有tabular是不能加标题的",
-			"\t\\xiaowu %设置为小五号字体",
-			"\t\\centering %表格居中",
+			"\\begin{table}[h] % h-当前位置，单独使用不生效 t-顶部 b-底部 p浮动",
+			"\t\\xiaowu % 设置为小五号字体",
+			"\t\\centering % 表格居中",
 			"\t\\begin{threeparttable}",
 			"\t\t\\bicaption{$1}{$2} % 第一个参数为中文名，第二个为英文名",
 			"\t\t\\label{Table:$3} % 用于文内引用的标签",
-			"\t\t\\begin{tabularx}{\\textwidth}{$4} % 左右中分别用字母l,r,c表示",
-			"\t\t\t\\toprule",
+			"\t\t\\begin{tabularx}{\\textwidth}{$4} % p{1cm}表示宽度为1cm,X表示自动计算列宽，P{1cm}表示宽度为1cm并居中，Z表示自动计算列宽并居中,假设表格有三列需要自动计算列宽则输入XXX",
+			"\t\t\t\\toprule % 下方输入表头",
 			"\t\t\t$5",
-			"\t\t\t\\midrule",
+			"\t\t\t\\midrule % 下方输入表内容",
 			"\t\t\t$6",
 			"\t\t\t\\bottomrule",
 			"\t\t\\end{tabularx}",
-			"\t\t%% 注释开始",
+			"\t\t% 注释开始（不需要可以删除）",
 			"\t\t\\begin{tablenotes}",
 			"\t\t\t\\tiny",
 			"\t\t\t\\item $7 ",
 			"\t\t\t\\item[1] $8 % 根据编号使用\\tnote{编号}引用",
 			"\t\t\\end{tablenotes} ",
-			"\t\t%% 注释结束 ",
+			"\t\t% 注释结束 ",
 			"\t\\end{threeparttable}",
 			"\\end{table}"
+		]
+	},
+	"BjfuCrossPageAutoLongTextTable": {
+		"scope": "latex",
+		"prefix": "table-cross-page-auto-long-text-bjfu",
+		"description": "生成一个bjfu可自动布局的跨页长文本表格",
+		"body": [
+			"{",
+			"\t\\xiaowu % 设置为小五号字体",
+			"\t\\centering % 表格居中",
+			"\t\\captionof{table}{$1 \\\\ Table \\ref{Table:$2} $3} % 第一个参数为中文名，第二个参数为文内引用标签，第三个参数为英文名",
+			"\t\\addtocounter{table}{-1}",
+			"\t% 参数1-h-当前位置，单独使用不生效 t-顶部 b-底部 p浮动",
+			"\t% 参数2-p{1cm}表示宽度为1cm,X表示自动计算列宽，P{1cm}表示宽度为1cm并居中，Z表示自动计算列宽并居中,假设表格有三列需要自动计算列宽则输入XXX",
+			"\t\\begin{longtabu}[h]{$4}",
+			"\t\t\\label{Table:$2} \\\\  % 用于文内引用的标签",
+			"\t\t\\toprule % 下方输入表头",
+			"",
+			"\t\t\\midrule",
+			"\t\t\\endhead % 下方输入表内容",
+			"",
+			"\t\t\\bottomrule",
+			"\t\\end{longtabu}",
+			"}"
 		]
 	},
 	"BjfuMuiltFigure": {
@@ -78,14 +102,14 @@
 		"prefix": "figure-muilt-bjfu",
 		"description": "生成一个bjfu含子图图片",
 		"body": [
-			"\\begin{figure}[htbp] %H为当前位置，!htb为忽略美学标准，htbp为浮动图形",
-			"\t\\centering %图片居中",
-			"\t\\label{Fig:$3} %用于文内引用的标签",
-			"\t\\subcaptionbox{$4 \\label{Fig:$5}} % 子图A {子图名 \\lable{子图标签}}",
-			"\t{\\includegraphics[width=$4\\linewidth]{$6}} % 子图A路径",
-		  	"\t\\subcaptionbox{$7 \\label{Fig:$8}} % 子图B {子图名 \\lable{子图标签}}",
-			"{\\includegraphics[width=$9\\linewidth]{$10}} % 子图B路径",
+			"\\begin{figure}[htbp] % h-当前位置，单独使用不生效 t-顶部 b-底部 p浮动",
+			"\t\\centering % 图片居中",
+			"\t\\subcaptionbox{$4 \\label{Fig:$5}} % 子图A {子图名 \\label{子图标签}}",
+			"\t{\\includegraphics[width=$4\\linewidth]{$6}} % 子图A路径（相对于项目根目录），0.7\\linewidth表示宽度为页宽的70%",
+			"\t\\subcaptionbox{$7 \\label{Fig:$8}} % 子图B {子图名 \\label{子图标签}}",
+			"{\\includegraphics[width=$9\\linewidth]{$10}} % 子图B路径（相对于项目根目录），0.7\\linewidth表示宽度为页宽的70%",
 			"\t\\bicaption{$1}{$2} % 第一个参数为中文名，第二个参数为英文名",
+			"\t\\label{Fig:$3} % 用于文内引用的标签",
 			"\\end{figure}"
 		]
 	},
@@ -94,11 +118,11 @@
 		"prefix": "figure-bjfu",
 		"description": "生成一个bjfu基本图片",
 		"body": [
-			"\\begin{figure}[htbp] %H为当前位置，!htb为忽略美学标准，htbp为浮动图形",
-			"\t\\centering %图片居中",
-			"\t\\label{Fig:$3} %用于文内引用的标签",
-			"\t\\includegraphics[width=$4\\textwidth]{$5} %插入图片，[]中设置图片大小，{}中是图片相对于根目录的文件名",
+			"\\begin{figure}[htbp] % h-当前位置，单独使用不生效 t-顶部 b-底部 p浮动",
+			"\t\\centering % 图片居中",
+			"\t\\includegraphics[width=$4\\textwidth]{$5} % []中设置图片大小比如0.7\\textwidth表示宽度为页宽的70%，{}中是图片相对于项目根目录的文件名如static/X.png",
 			"\t\\bicaption{$1}{$2} % 第一个参数为中文名，第二个参数为英文名",
+			"\t\\label{Fig:$3} % 用于文内引用的标签",
 			"\\end{figure}"
 		]
 	},
@@ -109,7 +133,7 @@
 		"body": [
 			"\\begin{equation}",
 			"\t$1",
-			"\t\\label{Equation:$2} %用于文内引用的标签",
+			"\t\\label{Equation:$2} % 用于文内引用的标签",
 			"\\end{equation}"
 		]
 	},
@@ -149,6 +173,21 @@
 			"\\begin{itemize}",
 			"\t\\item $1",
 			"\\end{itemize}"
+		]
+	},
+	"BjfuAlgorithm": {
+		"scope": "latex",
+		"prefix": "algorithm-bjfu",
+		"description": "生成一个bjfu算法",
+		"body": [
+			"\\begin{algorithm}[ht] % h-当前位置，单独使用不生效 t-顶部 b-底部 p浮动",
+			"\t\\bicaption{$1}{$2} % 第一个参数为中文名，第二个参数为英文名",
+			"\t\\small",
+			"\t\\label{$3} % 用于文内引用的标签",
+			"\t\\begin{algorithmic}",
+			"\t\t$4",
+			"\t\\end{algorithmic}",
+			"\\end{algorithm}"
 		]
 	},
 }

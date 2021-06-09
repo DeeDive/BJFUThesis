@@ -517,9 +517,5 @@
 	\whitedingB{\theenumii}
 } % 二级为圈1
 
-
-% LongTable Caption间距设置
-\setlength{\textfloatsep}{5pt}
-\setlength\LTpre{0em} \setlength\LTpost{0em}
 %%
 %% End of file `bjfuthesis.cls'.
