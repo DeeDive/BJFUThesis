@@ -175,7 +175,8 @@
 
 %tabluarx居中
 %该命令用于控制 p{} 的情况
-\newcolumntype{P}[1]{>{\RaggedRight\hspace{0pt}}p{#1}} % 使用过程中，将p{4cm}换成P{4cm}，小写改成大写即可
+\newcolumntype{P}[1]{>{\Centering\hspace{0pt}}p{#1}}
+%\newcolumntype{P}[1]{>{\RaggedRight\hspace{0pt}}p{#1}} % 使用过程中，将p{4cm}换成P{4cm}，小写改成大写即可
 %该命令用于控制 X 的情况
 \newcolumntype{Z}{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}X} % 使用过程中，将Z 换成 X，即可
 
