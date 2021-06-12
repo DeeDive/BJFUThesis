@@ -10,7 +10,7 @@
 
 \hyphenation{BJFU-Thesis}
 \def\bjfuthesis{BJFUThesis}
-\def\version{1.0.1}
+\def\version{1.0.2}
 
 \newcommand\bjfu@error[1]{%
 	\ClassError{bjfuthesis}{#1}{}%
@@ -166,8 +166,19 @@
 \RequirePackage{array}
 %三线表:\cs{toprule}，\cs{midrule}，\cs{bottomrule}。
 \RequirePackage{tabularx}
+\RequirePackage{ragged2e}
 \RequirePackage{booktabs}
 \RequirePackage{url}
+
+%带圈数字
+\RequirePackage{pifont}
+
+%tabluarx居中
+%该命令用于控制 p{} 的情况
+\newcolumntype{P}[1]{>{\Centering\hspace{0pt}}p{#1}}
+%\newcolumntype{P}[1]{>{\RaggedRight\hspace{0pt}}p{#1}} % 使用过程中，将p{4cm}换成P{4cm}，小写改成大写即可
+%该命令用于控制 X 的情况
+\newcolumntype{Z}{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}X} % 使用过程中，将Z 换成 X，即可
 
 
 
@@ -222,6 +233,7 @@
 }
 %字体
 % \setCJKfamilyfont{zhsong}[AutoFakeBold = {2.17}]{SimSun}
+% \setCJKfamilyfont{zhsong}[AutoFakeBold = {2.17}]{STSong}
 
 \providecommand\songti{\CJKfamily{zhsong}}
 \providecommand\heiti{\CJKfamily{zhhei}}
@@ -238,7 +250,7 @@
 	\fancyhead[C]{%
 		\xiaowu
 		\songti
-		北京林业大学本科毕业论文（设计）
+		北京林业大学本科毕业论文
 	}
 	\fancyfoot[C]{\wuhao\thepage}%
 	\headheight  0.5cm
@@ -492,13 +504,18 @@
 \captionsetup[figure][bi-second]{name=Figure} %设置图的英文编号前缀
 \captionsetup[table][bi-second]{name=Table} %设置表的英文编号前缀
 
-
+%带圈数字 
+\newcommand{\whiteding}[1]{\ding{\numexpr171+#1\relax}}
+\newcommand{\blackding}[1]{\ding{\numexpr181+#1\relax}}
+\newcommand{\whitedingB}[1]{\ding{\numexpr191+#1\relax}}
+\newcommand{\blackdingB}[1]{\ding{\numexpr201+#1\relax}}
+% \large\protect\textcircled{\small{}
 
 % 列表编号设置
 \renewcommand{\labelenumi}{（\theenumi）} % 一级为(1)
 \renewcommand{\theenumii}{\arabic{enumii}} % 二级设置为数字
 \renewcommand{\labelenumii}{
-    \large\protect\textcircled{\small{\theenumii}}
+	\whitedingB{\theenumii}
 } % 二级为圈1
 
 %%
