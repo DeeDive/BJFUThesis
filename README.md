@@ -1,5 +1,5 @@
 # BJFUThesis
-[![](https://img.shields.io/badge/BJFUThesis-v1.0.1-brightgreen.svg)](https://github.com/DeeDive/BJFUThesis)
+[![Page Views Count](https://badges.toozhao.com/badges/01FQ0AKJADE9D565SJ7JV1H6KE/green.svg)](https://badges.toozhao.com/stats/01FQ0AKJADE9D565SJ7JV1H6KE "Get your own page views count badge on badges.toozhao.com") [![](https://img.shields.io/badge/BJFUThesis-v1.0.1-brightgreen.svg)](https://github.com/DeeDive/BJFUThesis)
 
 ## 欢迎使用BJFU-Thesis论文模板
 
