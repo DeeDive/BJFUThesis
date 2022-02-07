@@ -55,7 +55,14 @@ Overleaf 用户可以从下面的模版链接创建自己的项目。
 
 ## 致谢
 
-* 感谢 马起园 及 王政 学长早期的[BjfuLatexTemplate](https://github.com/ufo5260987423/BjfuLatexTemplate) 工作， 对于本项目的开发给予了极大的激励。
+* BJFUThesis-启蒙 马起园 及 王政 学长早期的[BjfuLatexTemplate](https://github.com/ufo5260987423/BjfuLatexTemplate) 工作， 对于本项目的开发给予了极大的激励。
 * 感谢[@thuthesis](https://github.com/tuna/thuthesis) 以及[@SJTUThesis](https://github.com/sjtug/SJTUThesis) 对于本模版开发的极大启发与帮助。
-* 感谢 庞博[@Bloomberg2000](https://github.com/Bloomberg2000) 和 方子东[@quaeast](https://github.com/quaeast/BjfuLatexTemplate) 同学对本模板开发的极大贡献与支持。
+* BJFUThesis-v1 [引入2021版本最新格式规范] 窦勇强 庞博[@Bloomberg2000](https://github.com/Bloomberg2000) 方子东[@quaeast](https://github.com/quaeast/BjfuLatexTemplate) 同学对本模板开发的极大贡献与支持。
 * 感谢所有为模板贡献过代码的[同学们](#)，以及所有在测试和使用模板的你。
+
+## Future Direction
++ 一些初次接触同学友好的wiki
++ 研究生论文模板
++ 更好的模板，你来定义
+
+如果有兴趣的同学欢迎联系dyq21@mails.tsinghua.edu.cn，继续传承与开发~
