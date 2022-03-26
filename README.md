@@ -1,3 +1,5 @@
+**写于2022.03：目前的开发者们已于2021年夏季毕业，如果有兴趣的同学欢迎联系dyq21 AT mails.tsinghua.edu.cn，继续传承与开发~我们需要你的加入！**
+
 # BJFUThesis
 [![Page Views Count](https://badges.toozhao.com/badges/01FQ0AKJADE9D565SJ7JV1H6KE/green.svg)](https://badges.toozhao.com/stats/01FQ0AKJADE9D565SJ7JV1H6KE "Get your own page views count badge on badges.toozhao.com") [![](https://img.shields.io/badge/BJFUThesis-v1.0.1-brightgreen.svg)](https://github.com/DeeDive/BJFUThesis)
 
