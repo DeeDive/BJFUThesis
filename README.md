@@ -67,4 +67,4 @@ Overleaf 用户可以从下面的模版链接创建自己的项目。
 + 研究生论文模板
 + 更好的模板，你来定义
 
-如果有兴趣的同学欢迎联系dyq21@mails.tsinghua.edu.cn，继续传承与开发~
+**如果有兴趣的同学欢迎联系dyq21@mails.tsinghua.edu.cn，继续传承与开发~**
