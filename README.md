@@ -7,6 +7,8 @@
 
 LaTeX Thesis Template for Beijing Forestry University
 
+<img src="./static/example.png" width="60%">
+
 ## 获取模板
 
 ### 下载模版
