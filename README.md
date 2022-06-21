@@ -48,9 +48,10 @@ Overleaf 用户可以从下面的模版链接创建自己的项目。
 
 本模版目前是由同学兴趣小组维护的开源项目，我们非常欢迎问题反馈和新的贡献者！
 
-## 其他相关模板
+## 其他相关信息
 
-优秀毕业论文摘要模板： https://github.com/Bloomberg2000/BJFUThesis-outstanding
++ 优秀毕业论文摘要模板： https://github.com/Bloomberg2000/BJFUThesis-outstanding
++ TeX的历史 [What's in a Name: A Guide to the Many Flavours of TeX](https://www.overleaf.com/learn/latex/Articles/What%27s_in_a_Name%3A_A_Guide_to_the_Many_Flavours_of_TeX#:~:text=pdfLaTeX%20means%20using%20the%20LaTeX,package%20with%20the%20LuaTeX%20engine)
 
 ### 成为贡献者
 
