@@ -1,7 +1,12 @@
-**写于2022.03：目前的开发者们已于2021年夏季顺利毕业，如果有兴趣的学弟学妹欢迎联系dyq21 AT mails.tsinghua.edu.cn，继续传承与开发~我们需要你的加入！**
-
 # BJFUThesis
-[![Page Views Count](https://badges.toozhao.com/badges/01FQ0AKJADE9D565SJ7JV1H6KE/green.svg)](https://badges.toozhao.com/stats/01FQ0AKJADE9D565SJ7JV1H6KE "Get your own page views count badge on badges.toozhao.com") [![](https://img.shields.io/badge/BJFUThesis-v1.0.1-brightgreen.svg)](https://github.com/DeeDive/BJFUThesis)
+
+**注：本版本基于[2021年版格式规范](docs/%EF%BC%882021%E5%B9%B4%E7%89%88%EF%BC%89%E5%8C%97%E4%BA%AC%E6%9E%97%E4%B8%9A%E5%A4%A7%E5%AD%A6%E6%9C%AC%E7%A7%91%E6%AF%95%E4%B8%9A%E8%AE%BA%E6%96%87%EF%BC%88%E8%AE%BE%E8%AE%A1%EF%BC%89%E6%92%B0%E5%86%99%E4%B8%8E%E5%8D%B0%E5%88%B6%E8%A7%84%E8%8C%83.pdf)，欢迎提交Pull Request更新到符合最新格式规范。**
+
+### Overleaf
+
+非专业用户也可以直接点击下面的按钮创建自己的论文写作Overleaf项目。
+
+[![Overleaf](https://img.shields.io/badge/overleaf-BJFUThesis-brightgreen.svg)](https://www.overleaf.com/latex/templates/bjfuthesis-beijing-forestry-university-thesis-latex-template/hqfjrfjxswgn)
 
 ## 欢迎使用BJFU-Thesis论文模板
 
@@ -20,12 +25,6 @@ LaTeX Thesis Template for Beijing Forestry University
 ```bash
 git clone https://github.com/DeeDive/BJFUThesis.git
 ```
-
-### Overleaf
-
-Overleaf 用户可以从下面的模版链接创建自己的项目。
-
-[![Overleaf](https://img.shields.io/badge/overleaf-BJFUThesis-brightgreen.svg)](https://www.overleaf.com/latex/templates/bjfuthesis-beijing-forestry-university-thesis-latex-template/hqfjrfjxswgn)
 
 ## 使用 Visual Studio Code书写
 
@@ -48,8 +47,8 @@ Overleaf 用户可以从下面的模版链接创建自己的项目。
 
 本模版目前是由同学兴趣小组维护的开源项目，我们非常欢迎问题反馈和新的贡献者！
 
-## 其他相关信息
-
+## 其他相关资料
++ [New! ] **研究生论文模版 from Li Shuai [@lishuai-97](https://github.com/lishuai-97) 和 朱嘉懿 [@GlassBALDY](https://github.com/GlassBALDY)**：https://github.com/lishuai-97/BJFU_MasterThesis
 + 优秀毕业论文摘要模板： https://github.com/Bloomberg2000/BJFUThesis-outstanding
 + TeX的历史 [What's in a Name: A Guide to the Many Flavours of TeX](https://www.overleaf.com/learn/latex/Articles/What%27s_in_a_Name%3A_A_Guide_to_the_Many_Flavours_of_TeX#:~:text=pdfLaTeX%20means%20using%20the%20LaTeX,package%20with%20the%20LuaTeX%20engine)
 
@@ -66,12 +65,10 @@ Overleaf 用户可以从下面的模版链接创建自己的项目。
 
 * BJFUThesis-启蒙 马起园 及 王政 学长早期的[BjfuLatexTemplate](https://github.com/ufo5260987423/BjfuLatexTemplate) 工作， 对于本项目的开发给予了极大的激励。
 * 感谢[@thuthesis](https://github.com/tuna/thuthesis) 以及[@SJTUThesis](https://github.com/sjtug/SJTUThesis) 对于本模版开发的极大启发与帮助。
-* BJFUThesis-v1 [引入2021版本最新格式规范] 窦勇强 庞博[@Bloomberg2000](https://github.com/Bloomberg2000) 方子东[@quaeast](https://github.com/quaeast/BjfuLatexTemplate) 同学对本模板开发的极大贡献与支持。
+* BJFUThesis-v1 [引入2021版本最新格式规范] 窦勇强[@DeeDive](https://github.com/DeeDive/BJFUThesis) 庞博[@Bloomberg2000](https://github.com/Bloomberg2000) 方子东[@quaeast](https://github.com/quaeast/BjfuLatexTemplate) 同学对本模板开发的极大贡献与支持。
 * 感谢所有为模板贡献过代码的[同学们](#)，以及所有在测试和使用模板的你。
 
 ## Future Direction
 + 一些初次接触同学友好的wiki
 + 研究生论文模板
 + 更好的模板，你来定义
-
-**目前的开发者们已经毕业，如果有兴趣的同学欢迎联系dyq21 AT mails.tsinghua.edu.cn，继续传承与开发~**
